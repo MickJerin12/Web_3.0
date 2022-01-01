@@ -1,5 +1,24 @@
+import {
+  Loader,
+  Navbar,
+  Services,
+  Transactions,
+  Welcome,
+  Footer,
+} from "./components";
+
 function App() {
-  return <div className="text-3xl font-bold underline">Hello world!</div>;
+  return (
+    <div className="min-h-screen">
+      <div className="gradient-bg-welcome">
+        <Navbar />
+        <Welcome />
+      </div>
+      <Services />
+      <Transactions />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
